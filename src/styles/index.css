@@ -6,12 +6,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings:
-    "liga" 1,
-    "calt" 1,
-    "salt" 1,
-    "zero",
-    "cv11"; /* fix for Chrome */
 }
 
 @theme {
@@ -43,4 +37,74 @@
   --breakpoint-lg: 1024px;
   --breakpoint-xl: 1440px;
   --breakpoint-2xl: 1536px;
+
+  /* * Colours */
+  --color-primary-50: oklch(97.5% 0.01 255.47);
+  --color-primary-100: oklch(94.93% 0.01 247.94);
+  --color-primary-200: oklch(88.99% 0.02 241.91);
+  --color-primary-300: oklch(79.32% 0.05 241.21);
+  --color-primary-400: oklch(68.13% 0.07 239.71);
+  --color-primary-500: oklch(59.11% 0.08 240.01);
+  --color-primary-600: oklch(53.78% 0.08 244.37);
+  --color-primary-700: oklch(43.6% 0.06 245.2);
+  --color-primary-800: oklch(39.3% 0.05 243.6);
+  --color-primary-900: oklch(35.49% 0.04 246.63);
+  --color-primary-950: oklch(27.17% 0.03 250.87);
+}
+
+.hero {
+  height: 65vh;
+}
+
+.hero.hero-general {
+  background:
+    linear-gradient(110deg, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.4) 80%),
+    url("../assets/images/backgrounds/bg-headers.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.hero.hero-home {
+  background:
+    linear-gradient(110deg, rgba(0, 0, 0, 0.7) 44%, rgba(0, 0, 0, 0.7) 65%),
+    url("../assets/images/backgrounds/bg-hero.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 75vh;
+  }
+  .hero.hero-home {
+    background:
+      linear-gradient(110deg, rgba(0, 0, 0, 0.7) 44%, rgba(0, 0, 0, 0.1) 65%),
+      url("../assets/images/backgrounds/bg-hero.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hero.hero-general {
+  background:
+    linear-gradient(110deg, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.2) 80%),
+    url("../assets/images/backgrounds/bg-headers.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+}
+
+.feature-btn svg {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.feature-btn:hover svg {
+  transform: translateX(4px);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
 }
