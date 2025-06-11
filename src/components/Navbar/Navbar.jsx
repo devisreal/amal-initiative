@@ -1,4 +1,5 @@
 import { useClickAway } from "@uidotdev/usehooks";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
@@ -18,6 +19,10 @@ const links = [
   {
     name: "Our Team",
     link: "/team",
+  },
+  {
+    name: "Contact Us",
+    link: "/contact",
   },
 ];
 
