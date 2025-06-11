@@ -28,8 +28,8 @@ const Navbar = () => {
   });
 
   return (
-    <header className="sticky top-0 w-full bg-white">
-      <div className="mx-auto max-w-screen-md px-6 md:px-0 lg:max-w-screen-lg xl:max-w-screen-xl">
+    <header className="sticky top-0 z-40 w-full bg-white shadow">
+      <div className="mx-auto max-w-screen-md px-4 md:px-0 lg:max-w-screen-lg xl:max-w-screen-xl">
         <div className="flex items-center justify-between py-4">
           <motion.div
             initial={{ opacity: 0, x: -20 }}

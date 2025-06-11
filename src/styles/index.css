@@ -87,13 +87,13 @@
     background-position: center;
   }
   .hero.hero-general {
-  background:
-    linear-gradient(110deg, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.2) 80%),
-    url("../assets/images/backgrounds/bg-headers.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
+    background:
+      linear-gradient(110deg, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.3) 80%),
+      url("../assets/images/backgrounds/bg-headers.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
 }
 
 .feature-btn svg {

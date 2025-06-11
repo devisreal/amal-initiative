@@ -14,7 +14,7 @@ const MobileMenu = ({ links, isMobileMenuOpened, setIsMobileMenuOpened }) => {
           }}
           exit={{ y: -20, opacity: 0 }}
           key="mobile-menu"
-          className="fixed top-16 right-0 left-0 w-full space-y-1 bg-white p-5"
+          className="fixed top-16 right-0 left-0 w-full space-y-1 bg-white p-5 shadow"
         >
           {links.map((link) => {
             return (
