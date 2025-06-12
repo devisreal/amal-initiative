@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import Contact from "./pages/Contact";
 import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -11,6 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route index path="/" element={<HomePage />} />
         <Route path="/scholarship" element={<Scholarship />} />
@@ -18,37 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Footer />
     </BrowserRouter>
   );
 }

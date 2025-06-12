@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 import EducationForAllImage from "../assets/images/education-for-all.webp";
 import EmpowermentImage from "../assets/images/empowerment.webp";
@@ -130,7 +131,7 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="mb-3 inline-flex items-center gap-3 text-3xl font-bold text-sky-500 md:text-4xl lg:text-5xl"
+                className="mb-3 inline-flex items-center gap-3 text-3xl font-semibold text-sky-500 md:text-4xl lg:text-5xl"
               >
                 What AMAL Initiative Does
               </motion.h2>
@@ -187,7 +188,7 @@ const HomePage = () => {
                     key={stat.id}
                     className="rounded-2xl bg-sky-50 p-8 text-center font-medium"
                   >
-                    <div className="mb-2 text-3xl font-bold text-sky-500">
+                    <div className="mb-2 text-3xl font-semibold text-sky-500">
                       {stat.value}
                     </div>
                     <div className="text-xs text-gray-700 md:text-sm">
@@ -223,7 +224,7 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="mb-3 inline-flex items-center gap-3 text-3xl font-bold text-sky-500 md:text-4xl"
+                className="mb-3 inline-flex items-center gap-3 text-3xl font-semibold text-sky-500 md:text-4xl"
               >
                 Empowering Refugees Through Education
               </motion.h2>
@@ -295,7 +296,7 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="mr-3 text-6xl text-blue-200"
+                className="mr-3 font-clash text-6xl text-blue-200"
               >
                 "
               </motion.div>
@@ -305,7 +306,7 @@ const HomePage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="mb-4 text-3xl font-extrabold md:text-4xl"
+                  className="mb-4 text-3xl font-semibold md:text-4xl"
                 >
                   Our Mission
                 </motion.h3>
@@ -336,7 +337,7 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="mb-3 inline-flex items-center gap-3 text-3xl font-bold text-sky-500 md:text-4xl"
+                className="mb-3 inline-flex items-center gap-3 text-3xl font-semibold text-sky-500 md:text-4xl"
               >
                 Solidarity With Right To Educate
               </motion.h2>
@@ -385,7 +386,7 @@ const HomePage = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="my-28 bg-gray-100 py-28">
+      <section className="mt-28 bg-gray-100 py-28">
         <div className="mx-auto px-4 md:container">
           <div className="mb-16 text-center">
             <motion.h2
@@ -393,7 +394,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="mb-3 inline-flex items-center gap-3 text-3xl font-bold text-sky-500 md:text-4xl"
+              className="mb-3 inline-flex items-center gap-3 text-3xl font-semibold text-sky-500 md:text-4xl"
             >
               What Our Students Say
             </motion.h2>

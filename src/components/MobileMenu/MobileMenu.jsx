@@ -1,7 +1,9 @@
 import { AnimatePresence, motion } from "motion/react";
 import { NavLink } from "react-router-dom";
 
-const MobileMenu = ({ links, isMobileMenuOpened, setIsMobileMenuOpened }) => {
+import { links } from "../../data/links";
+
+const MobileMenu = ({ isMobileMenuOpened, setIsMobileMenuOpened }) => {
   return (
     <AnimatePresence initial={false} mode="wait">
       {isMobileMenuOpened && (

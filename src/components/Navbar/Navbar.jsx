@@ -5,26 +5,8 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import Logo from "../../assets/images/logo/logo.webp";
+import { links } from "../../data/links";
 import MobileMenu from "../MobileMenu/MobileMenu";
-
-const links = [
-  {
-    name: "Who we are",
-    link: "/",
-  },
-  {
-    name: "Scholarship Program",
-    link: "/scholarship",
-  },
-  {
-    name: "Our Team",
-    link: "/team",
-  },
-  {
-    name: "Contact Us",
-    link: "/contact",
-  },
-];
 
 const Navbar = () => {
   const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);
@@ -133,7 +115,6 @@ const Navbar = () => {
               )}
 
               <MobileMenu
-                links={links}
                 isMobileMenuOpened={isMobileMenuOpened}
                 setIsMobileMenuOpened={setIsMobileMenuOpened}
               />
