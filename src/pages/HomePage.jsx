@@ -6,6 +6,7 @@ import EducationForAllImage from "../assets/images/education-for-all.webp";
 import EmpowermentImage from "../assets/images/empowerment.webp";
 import { Hero } from "../components/Hero/Hero";
 import { stats } from "../data/stats";
+import { testimonials } from "../data/testimonials";
 
 const statsVariants = {
   hidden: { opacity: 0 },
@@ -264,7 +265,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Solidarity Section */}
+      {/* Mission Statement */}
       <motion.div
         initial={{ opacity: 0, y: 70 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -380,6 +381,90 @@ const HomePage = () => {
               alt="Education for all"
             />
           </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="my-28 bg-gray-100 py-28">
+        <div className="mx-auto px-4 md:container">
+          <div className="mb-16 text-center">
+            <motion.h2
+              initial={{ opacity: 0, y: 70 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="mb-3 inline-flex items-center gap-3 text-3xl font-bold text-sky-500 md:text-4xl"
+            >
+              What Our Students Say
+            </motion.h2>
+            <motion.div
+              initial={{ opacity: 0, y: 70 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="mx-auto mb-8 h-[3px] w-28 rounded-sm bg-sky-200 dark:bg-white"
+            ></motion.div>
+            <motion.p
+              initial={{ opacity: 0, y: 70 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="text-lg font-medium text-gray-600 md:text-xl"
+            >
+              Real stories from students who've transformed their lives through
+              education
+            </motion.p>
+          </div>
+          {/* Grid */}
+          <motion.div
+            variants={statsVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="mx-auto flex max-w-screen-xl flex-col justify-center gap-6 md:flex-row"
+          >
+            {/* Card */}
+            {testimonials.map((testimony) => {
+              return (
+                <motion.div
+                  variants={statsChildren}
+                  key={testimony.id}
+                  className="mx-auto flex h-auto w-full md:w-[26rem] lg:mx-0"
+                >
+                  <div className="flex flex-col rounded-xl bg-white shadow">
+                    <div className="flex-auto p-4 md:p-6">
+                      <p className="text-base text-gray-800 italic md:text-lg">
+                        "{testimony.content}"
+                      </p>
+                    </div>
+
+                    <div className="rounded-b-xl bg-gray-200 p-4 md:px-7">
+                      <div className="flex items-center gap-x-3">
+                        <div className="shrink-0">
+                          <img
+                            className="size-8 rounded-full sm:size-14"
+                            src={testimony.image}
+                            alt={testimony.name}
+                          />
+                        </div>
+
+                        <div className="grow">
+                          <p className="text-sm font-semibold text-gray-800 sm:text-base">
+                            {testimony.name}
+                          </p>
+                          <p className="text-xs text-gray-500">
+                            {testimony.status}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
+            {/* End Card */}
+          </motion.div>
+          {/* End Grid */}
         </div>
       </section>
     </>
