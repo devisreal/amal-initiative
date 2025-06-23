@@ -9,9 +9,9 @@ const Footer = () => {
   return (
     <footer className="bg-sky-900">
       <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="flex justify-center text-sky-300">
+        <Link to="/" className="flex justify-center text-sky-300">
           <img src={Logo} width={150} alt="" />
-        </div>
+        </Link>
 
         <p className="mx-auto mt-6 max-w-xl text-center leading-relaxed text-gray-300">
           At Amal Initiative We Take Your Privacy Seriously And Will Be

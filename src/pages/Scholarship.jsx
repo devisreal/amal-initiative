@@ -331,7 +331,7 @@ const Scholarship = () => {
             </svg>
           </summary>
 
-          <ul class="space-y-1 px-4 pt-4 text-gray-900">
+          <ul className="space-y-1 px-4 pt-4 text-gray-900">
             <li>
               <b>Chevening Scholarships:</b> Fully funded one-year master's
               programs for students with leadership potential.
@@ -394,7 +394,7 @@ const Scholarship = () => {
               />
             </svg>
           </summary>
-          <ol class="list-inside list-decimal space-y-1 px-4 pt-4 text-gray-800 marker:font-bold">
+          <ol className="list-inside list-decimal space-y-1 px-4 pt-4 text-gray-800 marker:font-bold">
             Here’s a summary of key steps to improve your chances of getting a
             scholarship:
             <li>
@@ -466,7 +466,7 @@ const Scholarship = () => {
               />
             </svg>
           </summary>
-          <ol class="list-inside list-decimal space-y-1 px-4 pt-4 text-gray-800 marker:font-bold">
+          <ol className="list-inside list-decimal space-y-1 px-4 pt-4 text-gray-800 marker:font-bold">
             <li>
               <b>Understand the Prompt:</b> Address what the scholarship
               committee is seeking.
@@ -570,7 +570,7 @@ const Scholarship = () => {
               />
             </svg>
           </summary>
-          <ol class="list-inside list-decimal space-y-1 px-4 pt-4 text-gray-800 marker:font-bold">
+          <ol className="list-inside list-decimal space-y-1 px-4 pt-4 text-gray-800 marker:font-bold">
             <li>
               <b>Choose Course & Institution:</b> Secure an offer from a
               licensed UK educational institution and obtain a Confirmation of

@@ -271,8 +271,8 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="absolute bottom-0 left-0 h-48 w-48 -translate-x-24 translate-y-24 rounded-full bg-white/5"
           ></motion.div>
-          <div className="relative z-10">
-            <div className="mb-6 flex items-start">
+          <div className="relative">
+            <div className="mb-3 flex items-start">
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -295,9 +295,9 @@ const HomePage = () => {
               </div>
             </div>
             <motion.blockquote
-              initial={{ opacity: 0, y: 70 }}
+              initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0 }}
               viewport={{ once: true }}
               className="max-w-4xl text-xl leading-relaxed font-light text-blue-50 italic md:text-2xl"
             >
@@ -305,6 +305,16 @@ const HomePage = () => {
               higher education for free and learn new skills to succeed in the
               UK.
             </motion.blockquote>
+
+            <motion.p
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="mt-5 place-self-end md:text-lg"
+            >
+              —Bilal Hamza, <cite>AMAL Founder</cite>
+            </motion.p>
           </div>
         </div>
       </motion.div>
