@@ -1,34 +1,16 @@
 import { motion } from "motion/react";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
 
+// Images
 import EducationForAllImage from "../assets/images/education-for-all.webp";
 import EmpowermentImage from "../assets/images/empowerment.webp";
+// Components
 import { Hero } from "../components/Hero/Hero";
+// Data
 import { stats } from "../data/stats";
 import { testimonials } from "../data/testimonials";
-
-const statsVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      delay: 0.6,
-      duration: 0.8,
-      delayChildren: 0.5,
-      staggerChildren: 0.3,
-    },
-  },
-};
-
-const statsChildren = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
+import { statsChildren, statsVariants } from "../lib/animation-variants";
 
 const HomePage = () => {
   useEffect(() => {
@@ -140,7 +122,7 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="mx-auto mb-8 h-[3px] w-28 rounded-sm bg-sky-200 dark:bg-white"
+                className="mx-auto mb-8 h-[3px] w-28 rounded-sm bg-sky-200"
               ></motion.div>
               <motion.p
                 initial={{ opacity: 0, y: 70 }}
@@ -233,7 +215,7 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="mb-8 h-[3px] w-28 rounded-sm bg-sky-200 dark:bg-white"
+                className="mb-8 h-[3px] w-28 rounded-sm bg-sky-200"
               ></motion.div>
               <motion.p
                 initial={{ opacity: 0, y: 70 }}
@@ -346,7 +328,7 @@ const HomePage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
-                className="mb-8 h-[3px] w-28 rounded-sm bg-sky-200 dark:bg-white"
+                className="mb-8 h-[3px] w-28 rounded-sm bg-sky-200"
               ></motion.div>
               <motion.h3
                 initial={{ opacity: 0, y: 70 }}
@@ -403,7 +385,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="mx-auto mb-8 h-[3px] w-28 rounded-sm bg-sky-200 dark:bg-white"
+              className="mx-auto mb-8 h-[3px] w-28 rounded-sm bg-sky-200"
             ></motion.div>
             <motion.p
               initial={{ opacity: 0, y: 70 }}

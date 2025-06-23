@@ -30,7 +30,7 @@ const Navbar = () => {
             </Link>
           </motion.div>
 
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <nav aria-label="Global">
               <ul className="flex items-center gap-3 text-sm lg:gap-6">
                 {links.map((link) => {
@@ -40,7 +40,7 @@ const Navbar = () => {
                         className={({ isActive }) =>
                           `rounded-lg p-2 px-3 text-base font-medium ${
                             isActive
-                              ? "bg-gray-100 text-sky-500"
+                              ? "bg-gray- text-sky-500"
                               : "text-gray-800"
                           }`
                         }
@@ -71,7 +71,7 @@ const Navbar = () => {
               </a>
             </div>
 
-            <div className="block md:hidden" ref={mobileMenuRef}>
+            <div className="block lg:hidden" ref={mobileMenuRef}>
               {isMobileMenuOpened ? (
                 <button
                   onClick={() => setIsMobileMenuOpened(false)}
