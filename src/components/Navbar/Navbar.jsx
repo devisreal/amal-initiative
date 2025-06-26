@@ -61,12 +61,12 @@ const Navbar = () => {
             className="flex items-center gap-4"
           >
             <div className="sm:flex sm:gap-4">
-              <a
+              <Link
                 className="rounded-lg bg-sky-500 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-sky-500/90"
-                href="#"
+                to="/contact"
               >
                 Apply Now
-              </a>
+              </Link>
             </div>
 
             <div className="block lg:hidden" ref={mobileMenuRef}>
