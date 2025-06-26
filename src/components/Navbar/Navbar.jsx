@@ -39,9 +39,7 @@ const Navbar = () => {
                       <NavLink
                         className={({ isActive }) =>
                           `rounded-lg p-2 px-3 text-base font-medium ${
-                            isActive
-                              ? "bg-gray- text-sky-500"
-                              : "text-gray-800"
+                            isActive ? "bg-gray- text-sky-500" : "text-gray-800"
                           }`
                         }
                         to={link.link}
