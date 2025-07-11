@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
-import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 // images
 import BilalImage from "../assets/images/founders/bilal.webp";
@@ -9,14 +8,41 @@ import HamzaImage from "../assets/images/founders/hamza.webp";
 import { Hero } from "../components/Hero/Hero";
 
 const Team = () => {
-  useEffect(() => {
-    document.title = "Team | Amal Initiative";
-  }, []);
   return (
     <>
       <Helmet>
         <title>Team | Amal Initiative</title>
-        <meta name="description" content="Learn more about us" />
+        <meta content="Team | Amal Initiative" name="title" />
+        <meta
+          name="keywords"
+          content="home, amal, initiative, team, amal initiative, refugees, seo, education, scholarship"
+        />
+        <meta
+          content="Meet the passionate team behind the AMAL Initiative—educators, mentors, and advocates working together to help displaced students overcome barriers and access higher education opportunities in the UK."
+          name="description"
+        />
+
+        <meta property="og:title" content="Team | AMAL Initiative" />
+        <meta
+          property="og:description"
+          content="Get to know the passionate mentors and advocates behind the AMAL Initiative, helping displaced students access UK universities."
+        />
+        <meta property="og:url" content="https://amal-initiative.com/team" />
+        <meta
+          property="og:image"
+          content="https://amal-initiative.com/assets/logo2-COZAhHh1.webp"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Team | AMAL Initiative" />
+        <meta
+          name="twitter:description"
+          content="The people empowering displaced students to access UK higher education through scholarships and mentorship."
+        />
+        <meta
+          name="twitter:image"
+          content="https://amal-initiative.com/assets/logo2-COZAhHh1.webp"
+        />
       </Helmet>
       <Hero type="general">
         <div className="mx-auto flex h-full max-w-screen-md flex-col items-start justify-center gap-6 px-6 md:px-0 lg:max-w-screen-lg xl:max-w-screen-xl">

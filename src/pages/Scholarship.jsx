@@ -2,10 +2,8 @@ import { peace } from "@lucide/lab";
 import { Icon } from "lucide-react";
 import { ShieldEllipsis } from "lucide-react";
 import { UsersRound } from "lucide-react";
-import { GraduationCap } from "lucide-react";
 import { motion } from "motion/react";
-import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 import EmpowermentImage from "../assets/images/scholarship-assistance.webp";
@@ -14,14 +12,45 @@ import { coreInitiatives } from "../data/core-intiatives";
 import { statsChildren, statsVariants } from "../lib/animation-variants";
 
 const Scholarship = () => {
-  useEffect(() => {
-    document.title = "Scholarship | Amal Initiative";
-  }, []);
   return (
     <>
       <Helmet>
-        <title>Scholarship | Amal Initiative</title>
-        <meta name="description" content="Learn more about us" />
+        <title>Scholarships | Amal Initiative</title>
+        <meta content="Scholarships | Amal Initiative" name="title" />
+        <meta
+          name="keywords"
+          content="home, amal, initiative, AMAL initiative, refugees, seo, education, scholarship"
+        />
+        <meta
+          content="Discover how the AMAL Initiative helps displaced students secure fully funded university scholarships in the UK, with clear guidance and support through every step of the application process."
+          name="description"
+        />
+
+        <meta property="og:title" content="Scholarships | AMAL Initiative" />
+        <meta
+          property="og:description"
+          content="We help displaced students in the UK secure free scholarships and access higher education with dedicated support."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://amal-initiative.com/scholarship"
+        />
+        <meta
+          property="og:image"
+          content="https://amal-initiative.com/assets/logo2-COZAhHh1.webp"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Scholarships | AMAL Initiative" />
+        <meta
+          name="twitter:description"
+          content="Support for displaced students to find free UK university scholarships and guidance."
+        />
+        <meta
+          name="twitter:image"
+          content="https://amal-initiative.com/assets/logo2-COZAhHh1.webp"
+        />
       </Helmet>
       <Hero type="general">
         <div className="mx-auto flex h-full max-w-screen-md flex-col items-start justify-center gap-6 px-6 md:px-0 lg:max-w-screen-lg xl:max-w-screen-xl">

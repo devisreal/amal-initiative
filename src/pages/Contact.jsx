@@ -1,7 +1,6 @@
 import { motion } from "motion/react";
 import React from "react";
-import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 import ContactForm from "../components/ContactForm/ContactForm";
 import { Hero } from "../components/Hero/Hero";
@@ -10,8 +9,38 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact | Amal Initiative</title>
-        <meta name="description" content="Contact AMAL Initiative" />
+        <title>Contact Us | Amal Initiative</title>
+        <meta content="Contact Us | Amal Initiative" name="title" />
+        <meta
+          name="keywords"
+          content="home, amal, initiative, contact, amal initiative, refugees, seo, education, scholarship"
+        />
+        <meta
+          content="Have questions about scholarships or mentorship? Reach out to the AMAL Initiative, we're here to support displaced students across the UK on their journey to university education."
+          name="description"
+        />
+
+        <meta property="og:title" content="Contact Us | AMAL Initiative" />
+        <meta
+          property="og:description"
+          content="Reach out to the AMAL Initiative team for help with university scholarships, mentorship, or support for displaced students."
+        />
+        <meta property="og:url" content="https://amal-initiative.com/contact" />
+        <meta
+          property="og:image"
+          content="https://amal-initiative.com/assets/logo2-COZAhHh1.webp"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Us | AMAL Initiative" />
+        <meta
+          name="twitter:description"
+          content="Get in touch to learn how we support displaced students through scholarships and mentoring."
+        />
+        <meta
+          name="twitter:image"
+          content="https://amal-initiative.com/assets/logo2-COZAhHh1.webp"
+        />
       </Helmet>
       <Hero type="general">
         <div className="mx-auto flex h-full max-w-screen-md flex-col items-start justify-center gap-6 px-6 md:px-0 lg:max-w-screen-lg xl:max-w-screen-xl">

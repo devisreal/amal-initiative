@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
-import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 // Images
 import EducationForAllImage from "../assets/images/education-for-all.webp";
@@ -13,15 +12,55 @@ import { testimonials } from "../data/testimonials";
 import { statsChildren, statsVariants } from "../lib/animation-variants";
 
 const HomePage = () => {
-  useEffect(() => {
-    document.title = "Home | Amal Initiative";
-  }, []);
-
   return (
     <>
       <Helmet>
-        <title>Home | Amal Initiative</title>
-        <meta name="description" content="Learn more about us" />
+        <title>
+          AMAL Initiative | Free Higher Education for Displaced Students in the
+          UK
+        </title>
+        <meta
+          content="AMAL Initiative | Free Higher Education for Displaced Students in the
+    UK"
+          name="title"
+        />
+        <meta
+          name="keywords"
+          content="home, amal, initiative, amal initiative, refugees, seo, education, scholarship"
+        />
+        <meta
+          content="The AMAL Initiative empowers displaced students across the UK by connecting them with fully funded scholarships, dedicated mentorship, and tailored support to unlock access to higher education—completely free of charge."
+          name="description"
+        />
+
+        <meta
+          property="og:title"
+          content="AMAL Initiative | Free Higher Education for Displaced Students"
+        />
+        <meta
+          property="og:description"
+          content="The AMAL Initiative empowers displaced students across the UK by connecting them with fully funded scholarships, dedicated mentorship, and tailored support to unlock access to higher education—completely free of charge."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://amal-initiative.com/" />
+        <meta
+          property="og:image"
+          content="https://amal-initiative.com/assets/logo2-COZAhHh1.webp"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="AMAL Initiative | Free Higher Education for Displaced Students"
+        />
+        <meta
+          name="twitter:description"
+          content="The AMAL Initiative empowers displaced students across the UK by connecting them with fully funded scholarships, dedicated mentorship, and tailored support to unlock access to higher education—completely free of charge."
+        />
+        <meta
+          name="twitter:image"
+          content="https://amal-initiative.com/assets/logo2-COZAhHh1.webp"
+        />
       </Helmet>
       <Hero>
         <div className="mx-auto flex h-full max-w-screen-md flex-col items-start justify-center gap-6 px-6 md:px-0 lg:max-w-screen-lg xl:max-w-screen-xl">

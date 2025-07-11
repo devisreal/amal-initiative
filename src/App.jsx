@@ -1,3 +1,4 @@
+import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Footer from "./components/Footer/Footer";
@@ -11,18 +12,20 @@ import Team from "./pages/Team";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <ScrollToTop />
-      <Routes>
-        <Route index path="/" element={<HomePage />} />
-        <Route path="/scholarship" element={<Scholarship />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <Navbar />
+        <ScrollToTop />
+        <Routes>
+          <Route index path="/" element={<HomePage />} />
+          <Route path="/scholarship" element={<Scholarship />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }
 
